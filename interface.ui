@@ -1,0 +1,1607 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1161</width>
+    <height>805</height>
+   </rect>
+  </property>
+  <property name="font">
+   <font>
+    <pointsize>10</pointsize>
+   </font>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">*{
+	
+	
+	background-color: rgb(144, 144, 144);
+	border:none;
+}
+</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <widget class="QFrame" name="header_frame">
+      <property name="styleSheet">
+       <string notr="true"/>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <layout class="QHBoxLayout" name="horizontalLayout">
+       <property name="spacing">
+        <number>0</number>
+       </property>
+       <property name="leftMargin">
+        <number>0</number>
+       </property>
+       <property name="topMargin">
+        <number>0</number>
+       </property>
+       <property name="rightMargin">
+        <number>0</number>
+       </property>
+       <property name="bottomMargin">
+        <number>0</number>
+       </property>
+       <item>
+        <widget class="QFrame" name="header_left_frame">
+         <property name="styleSheet">
+          <string notr="true"/>
+         </property>
+         <property name="frameShape">
+          <enum>QFrame::StyledPanel</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Raised</enum>
+         </property>
+         <layout class="QHBoxLayout" name="horizontalLayout_4">
+          <property name="spacing">
+           <number>0</number>
+          </property>
+          <property name="leftMargin">
+           <number>0</number>
+          </property>
+          <property name="topMargin">
+           <number>0</number>
+          </property>
+          <property name="rightMargin">
+           <number>0</number>
+          </property>
+          <property name="bottomMargin">
+           <number>0</number>
+          </property>
+          <item alignment="Qt::AlignLeft">
+           <widget class="QPushButton" name="pushButton">
+            <property name="font">
+             <font>
+              <family>MS Shell Dlg 2</family>
+              <pointsize>16</pointsize>
+              <weight>9</weight>
+              <italic>false</italic>
+              <bold>false</bold>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">font: 75 16pt &quot;MS Shell Dlg 2&quot;;</string>
+            </property>
+            <property name="text">
+             <string>≡ Menu</string>
+            </property>
+            <property name="iconSize">
+             <size>
+              <width>32</width>
+              <height>32</height>
+             </size>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="QFrame" name="header_center_frame">
+         <property name="frameShape">
+          <enum>QFrame::StyledPanel</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Raised</enum>
+         </property>
+         <layout class="QHBoxLayout" name="horizontalLayout_3">
+          <item>
+           <widget class="QLabel" name="label">
+            <property name="font">
+             <font>
+              <pointsize>15</pointsize>
+              <weight>75</weight>
+              <bold>true</bold>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">color: rgb(255, 255, 255);
+</string>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="label_2">
+            <property name="font">
+             <font>
+              <family>Constantia</family>
+              <pointsize>20</pointsize>
+              <weight>9</weight>
+              <italic>false</italic>
+              <bold>false</bold>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">font: 75 16pt &quot;MS Shell Dlg 2&quot;;
+font: 75 20pt &quot;Constantia&quot;;</string>
+            </property>
+            <property name="text">
+             <string>💻 Desktop Cluster</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item alignment="Qt::AlignRight">
+        <widget class="QFrame" name="header_right_frame">
+         <property name="frameShape">
+          <enum>QFrame::StyledPanel</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Raised</enum>
+         </property>
+         <layout class="QHBoxLayout" name="horizontalLayout_2">
+          <property name="spacing">
+           <number>15</number>
+          </property>
+          <property name="leftMargin">
+           <number>0</number>
+          </property>
+          <property name="topMargin">
+           <number>0</number>
+          </property>
+          <property name="rightMargin">
+           <number>0</number>
+          </property>
+          <property name="bottomMargin">
+           <number>0</number>
+          </property>
+          <item>
+           <widget class="QPushButton" name="minimize_window_button">
+            <property name="font">
+             <font>
+              <family>MS Shell Dlg 2</family>
+              <pointsize>25</pointsize>
+              <weight>9</weight>
+              <italic>false</italic>
+              <bold>false</bold>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">font: 75 25pt &quot;MS Shell Dlg 2&quot;;</string>
+            </property>
+            <property name="text">
+             <string>-</string>
+            </property>
+            <property name="iconSize">
+             <size>
+              <width>16</width>
+              <height>16</height>
+             </size>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="restore_window_button">
+            <property name="font">
+             <font>
+              <family>MS Shell Dlg 2</family>
+              <pointsize>12</pointsize>
+              <weight>9</weight>
+              <italic>false</italic>
+              <bold>false</bold>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">font: 75 12pt &quot;MS Shell Dlg 2&quot;;</string>
+            </property>
+            <property name="text">
+             <string>❒</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="close_window_button">
+            <property name="font">
+             <font>
+              <family>MS Shell Dlg 2</family>
+              <pointsize>12</pointsize>
+              <weight>50</weight>
+              <italic>false</italic>
+              <bold>false</bold>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">font: 12pt &quot;MS Shell Dlg 2&quot;;</string>
+            </property>
+            <property name="text">
+             <string>✖</string>
+            </property>
+            <property name="iconSize">
+             <size>
+              <width>20</width>
+              <height>20</height>
+             </size>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item>
+     <widget class="QFrame" name="main_frame">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Preferred" vsizetype="Expanding">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <layout class="QHBoxLayout" name="horizontalLayout_8">
+       <property name="spacing">
+        <number>0</number>
+       </property>
+       <property name="leftMargin">
+        <number>0</number>
+       </property>
+       <property name="topMargin">
+        <number>0</number>
+       </property>
+       <property name="rightMargin">
+        <number>0</number>
+       </property>
+       <property name="bottomMargin">
+        <number>0</number>
+       </property>
+       <item alignment="Qt::AlignLeft">
+        <widget class="QFrame" name="left_content_frame">
+         <property name="frameShape">
+          <enum>QFrame::StyledPanel</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Raised</enum>
+         </property>
+         <layout class="QVBoxLayout" name="verticalLayout_2">
+          <item>
+           <widget class="QPushButton" name="cpu_memory_frame">
+            <property name="font">
+             <font>
+              <family>MS Shell Dlg 2</family>
+              <pointsize>12</pointsize>
+              <weight>9</weight>
+              <italic>false</italic>
+              <bold>false</bold>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">*{
+	font: 75 12pt &quot;MS Shell Dlg 2&quot;;
+}</string>
+            </property>
+            <property name="text">
+             <string>🗃️  CPU</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="battery_frame">
+            <property name="styleSheet">
+             <string notr="true">font: 75 12pt &quot;MS Shell Dlg 2&quot;;</string>
+            </property>
+            <property name="text">
+             <string>🔋 Battery</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="Sys_frame">
+            <property name="styleSheet">
+             <string notr="true">font: 75 12pt &quot;MS Shell Dlg 2&quot;;</string>
+            </property>
+            <property name="text">
+             <string>🤖 System Info</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="activity_frame">
+            <property name="styleSheet">
+             <string notr="true">font: 75 12pt &quot;MS Shell Dlg 2&quot;;</string>
+            </property>
+            <property name="text">
+             <string>📈 Activity</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="storage_frame">
+            <property name="styleSheet">
+             <string notr="true">font: 75 12pt &quot;MS Shell Dlg 2&quot;;</string>
+            </property>
+            <property name="text">
+             <string>💽 Storage</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="network_frame">
+            <property name="styleSheet">
+             <string notr="true">font: 75 12pt &quot;MS Shell Dlg 2&quot;;</string>
+            </property>
+            <property name="text">
+             <string>🌐 Network</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="QFrame" name="main_content_frame">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="frameShape">
+          <enum>QFrame::StyledPanel</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Raised</enum>
+         </property>
+         <layout class="QVBoxLayout" name="verticalLayout_3">
+          <item>
+           <widget class="QStackedWidget" name="stackedWidget">
+            <widget class="QWidget" name="networks">
+             <layout class="QVBoxLayout" name="verticalLayout_12">
+              <item>
+               <widget class="QScrollArea" name="scrollArea">
+                <property name="widgetResizable">
+                 <bool>true</bool>
+                </property>
+                <widget class="QWidget" name="scrollAreaWidgetContents">
+                 <property name="geometry">
+                  <rect>
+                   <x>0</x>
+                   <y>0</y>
+                   <width>913</width>
+                   <height>1479</height>
+                  </rect>
+                 </property>
+                 <layout class="QVBoxLayout" name="verticalLayout_13">
+                  <item>
+                   <widget class="QFrame" name="frame_9">
+                    <property name="frameShape">
+                     <enum>QFrame::StyledPanel</enum>
+                    </property>
+                    <property name="frameShadow">
+                     <enum>QFrame::Raised</enum>
+                    </property>
+                    <layout class="QVBoxLayout" name="verticalLayout_17">
+                     <item>
+                      <widget class="QLabel" name="label_46">
+                       <property name="styleSheet">
+                        <string notr="true">font: 75 15pt &quot;MS Shell Dlg 2&quot;;</string>
+                       </property>
+                       <property name="text">
+                        <string>Stats</string>
+                       </property>
+                      </widget>
+                     </item>
+                     <item>
+                      <widget class="QTableWidget" name="net_stats_table">
+                       <property name="sizePolicy">
+                        <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                         <horstretch>0</horstretch>
+                         <verstretch>0</verstretch>
+                        </sizepolicy>
+                       </property>
+                       <property name="minimumSize">
+                        <size>
+                         <width>0</width>
+                         <height>300</height>
+                        </size>
+                       </property>
+                       <property name="styleSheet">
+                        <string notr="true">background-color: rgb(125, 125, 125);</string>
+                       </property>
+                       <column>
+                        <property name="text">
+                         <string/>
+                        </property>
+                       </column>
+                       <column>
+                        <property name="text">
+                         <string>ISUP</string>
+                        </property>
+                       </column>
+                       <column>
+                        <property name="text">
+                         <string>DUPLEX</string>
+                        </property>
+                       </column>
+                       <column>
+                        <property name="text">
+                         <string>SPEED</string>
+                        </property>
+                       </column>
+                       <column>
+                        <property name="text">
+                         <string>MTU</string>
+                        </property>
+                       </column>
+                      </widget>
+                     </item>
+                    </layout>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QFrame" name="frame_10">
+                    <property name="styleSheet">
+                     <string notr="true">font: 75 12pt &quot;MS Shell Dlg 2&quot;;</string>
+                    </property>
+                    <property name="frameShape">
+                     <enum>QFrame::StyledPanel</enum>
+                    </property>
+                    <property name="frameShadow">
+                     <enum>QFrame::Raised</enum>
+                    </property>
+                    <layout class="QVBoxLayout" name="verticalLayout_16">
+                     <item>
+                      <widget class="QLabel" name="label_47">
+                       <property name="styleSheet">
+                        <string notr="true">font: 75 15pt &quot;MS Shell Dlg 2&quot;;</string>
+                       </property>
+                       <property name="text">
+                        <string>Network IO Counters</string>
+                       </property>
+                      </widget>
+                     </item>
+                     <item>
+                      <widget class="QTableWidget" name="net_io_table">
+                       <property name="sizePolicy">
+                        <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                         <horstretch>0</horstretch>
+                         <verstretch>0</verstretch>
+                        </sizepolicy>
+                       </property>
+                       <property name="minimumSize">
+                        <size>
+                         <width>0</width>
+                         <height>300</height>
+                        </size>
+                       </property>
+                       <property name="styleSheet">
+                        <string notr="true">background-color: rgb(125, 125, 125);</string>
+                       </property>
+                       <column>
+                        <property name="text">
+                         <string>IO</string>
+                        </property>
+                        <property name="font">
+                         <font>
+                          <pointsize>8</pointsize>
+                         </font>
+                        </property>
+                       </column>
+                       <column>
+                        <property name="text">
+                         <string>Bytes Sent</string>
+                        </property>
+                        <property name="font">
+                         <font>
+                          <pointsize>8</pointsize>
+                         </font>
+                        </property>
+                       </column>
+                       <column>
+                        <property name="text">
+                         <string>Bytes received</string>
+                        </property>
+                        <property name="font">
+                         <font>
+                          <pointsize>7</pointsize>
+                         </font>
+                        </property>
+                       </column>
+                       <column>
+                        <property name="text">
+                         <string>Packets Sent</string>
+                        </property>
+                        <property name="font">
+                         <font>
+                          <pointsize>7</pointsize>
+                         </font>
+                        </property>
+                       </column>
+                       <column>
+                        <property name="text">
+                         <string>Packets received</string>
+                        </property>
+                        <property name="font">
+                         <font>
+                          <pointsize>7</pointsize>
+                         </font>
+                        </property>
+                       </column>
+                       <column>
+                        <property name="text">
+                         <string>ERR IN</string>
+                        </property>
+                        <property name="font">
+                         <font>
+                          <pointsize>7</pointsize>
+                         </font>
+                        </property>
+                       </column>
+                       <column>
+                        <property name="text">
+                         <string>ERROUT</string>
+                        </property>
+                        <property name="font">
+                         <font>
+                          <pointsize>7</pointsize>
+                         </font>
+                        </property>
+                       </column>
+                       <column>
+                        <property name="text">
+                         <string>DROP IN</string>
+                        </property>
+                        <property name="font">
+                         <font>
+                          <pointsize>7</pointsize>
+                         </font>
+                        </property>
+                       </column>
+                       <column>
+                        <property name="text">
+                         <string>DROP OUT</string>
+                        </property>
+                        <property name="font">
+                         <font>
+                          <pointsize>7</pointsize>
+                         </font>
+                        </property>
+                       </column>
+                      </widget>
+                     </item>
+                    </layout>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QFrame" name="frame_11">
+                    <property name="frameShape">
+                     <enum>QFrame::StyledPanel</enum>
+                    </property>
+                    <property name="frameShadow">
+                     <enum>QFrame::Raised</enum>
+                    </property>
+                    <layout class="QVBoxLayout" name="verticalLayout_15">
+                     <item>
+                      <widget class="QLabel" name="label_48">
+                       <property name="styleSheet">
+                        <string notr="true">font: 75 15pt &quot;MS Shell Dlg 2&quot;</string>
+                       </property>
+                       <property name="text">
+                        <string>Network Address</string>
+                       </property>
+                      </widget>
+                     </item>
+                     <item>
+                      <widget class="QTableWidget" name="net_address_table">
+                       <property name="sizePolicy">
+                        <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                         <horstretch>0</horstretch>
+                         <verstretch>0</verstretch>
+                        </sizepolicy>
+                       </property>
+                       <property name="minimumSize">
+                        <size>
+                         <width>0</width>
+                         <height>300</height>
+                        </size>
+                       </property>
+                       <property name="styleSheet">
+                        <string notr="true">background-color: rgb(125, 125, 125);</string>
+                       </property>
+                       <column>
+                        <property name="text">
+                         <string/>
+                        </property>
+                       </column>
+                       <column>
+                        <property name="text">
+                         <string>Family</string>
+                        </property>
+                       </column>
+                       <column>
+                        <property name="text">
+                         <string>Address</string>
+                        </property>
+                       </column>
+                       <column>
+                        <property name="text">
+                         <string>Netmask</string>
+                        </property>
+                       </column>
+                       <column>
+                        <property name="text">
+                         <string>Broadcast</string>
+                        </property>
+                       </column>
+                       <column>
+                        <property name="text">
+                         <string/>
+                        </property>
+                       </column>
+                      </widget>
+                     </item>
+                    </layout>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QFrame" name="frame_12">
+                    <property name="frameShape">
+                     <enum>QFrame::StyledPanel</enum>
+                    </property>
+                    <property name="frameShadow">
+                     <enum>QFrame::Raised</enum>
+                    </property>
+                    <layout class="QVBoxLayout" name="verticalLayout_14">
+                     <item>
+                      <widget class="QLabel" name="label_49">
+                       <property name="styleSheet">
+                        <string notr="true">font: 75 15pt &quot;MS Shell Dlg 2&quot;;</string>
+                       </property>
+                       <property name="text">
+                        <string>Network Connections</string>
+                       </property>
+                      </widget>
+                     </item>
+                     <item>
+                      <widget class="QTableWidget" name="net_connections_table">
+                       <property name="sizePolicy">
+                        <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                         <horstretch>0</horstretch>
+                         <verstretch>0</verstretch>
+                        </sizepolicy>
+                       </property>
+                       <property name="minimumSize">
+                        <size>
+                         <width>0</width>
+                         <height>300</height>
+                        </size>
+                       </property>
+                       <property name="styleSheet">
+                        <string notr="true">background-color: rgb(125, 125, 125);</string>
+                       </property>
+                       <column>
+                        <property name="text">
+                         <string>FD</string>
+                        </property>
+                       </column>
+                       <column>
+                        <property name="text">
+                         <string>Family</string>
+                        </property>
+                       </column>
+                       <column>
+                        <property name="text">
+                         <string>type</string>
+                        </property>
+                       </column>
+                       <column>
+                        <property name="text">
+                         <string>LADDR</string>
+                        </property>
+                       </column>
+                       <column>
+                        <property name="text">
+                         <string>RADDR</string>
+                        </property>
+                       </column>
+                       <column>
+                        <property name="text">
+                         <string>STATUS</string>
+                        </property>
+                       </column>
+                       <column>
+                        <property name="text">
+                         <string>PID</string>
+                        </property>
+                       </column>
+                      </widget>
+                     </item>
+                    </layout>
+                   </widget>
+                  </item>
+                 </layout>
+                </widget>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+            <widget class="QWidget" name="battery">
+             <layout class="QVBoxLayout" name="verticalLayout_5">
+              <item>
+               <widget class="QLabel" name="label_20">
+                <property name="styleSheet">
+                 <string notr="true">font: 75 14pt &quot;MS Shell Dlg 2&quot;;</string>
+                </property>
+                <property name="text">
+                 <string>Battery Information</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QFrame" name="frame_3">
+                <property name="sizePolicy">
+                 <sizepolicy hsizetype="Preferred" vsizetype="Expanding">
+                  <horstretch>0</horstretch>
+                  <verstretch>0</verstretch>
+                 </sizepolicy>
+                </property>
+                <property name="frameShape">
+                 <enum>QFrame::StyledPanel</enum>
+                </property>
+                <property name="frameShadow">
+                 <enum>QFrame::Raised</enum>
+                </property>
+                <layout class="QGridLayout" name="gridLayout_3">
+                 <item row="2" column="1">
+                  <widget class="QLabel" name="battery_time_left">
+                   <property name="styleSheet">
+                    <string notr="true">font: 75 12pt &quot;MS Shell Dlg 2&quot;;</string>
+                   </property>
+                   <property name="text">
+                    <string>N/A</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="3" column="0">
+                  <widget class="QLabel" name="label_22">
+                   <property name="styleSheet">
+                    <string notr="true">font: 75 15pt &quot;MS Shell Dlg 2&quot;;</string>
+                   </property>
+                   <property name="text">
+                    <string>Plugged In</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="3" column="1">
+                  <widget class="QLabel" name="battery_plugged">
+                   <property name="styleSheet">
+                    <string notr="true">font: 75 12pt &quot;MS Shell Dlg 2&quot;;</string>
+                   </property>
+                   <property name="text">
+                    <string>N/A</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="0" column="0">
+                  <widget class="QLabel" name="label_25">
+                   <property name="styleSheet">
+                    <string notr="true">font: 75 15pt &quot;MS Shell Dlg 2&quot;;
+</string>
+                   </property>
+                   <property name="text">
+                    <string>Status</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="2" column="0">
+                  <widget class="QLabel" name="label_23">
+                   <property name="styleSheet">
+                    <string notr="true">font: 75 15pt &quot;MS Shell Dlg 2&quot;;</string>
+                   </property>
+                   <property name="text">
+                    <string>Time Left</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="0" column="1">
+                  <widget class="QLabel" name="battery_status">
+                   <property name="styleSheet">
+                    <string notr="true">font: 75 12pt &quot;MS Shell Dlg 2&quot;;
+</string>
+                   </property>
+                   <property name="text">
+                    <string>N/A</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="1" column="1">
+                  <widget class="QLabel" name="battery_charge">
+                   <property name="styleSheet">
+                    <string notr="true">font: 75 12pt &quot;MS Shell Dlg 2&quot;;</string>
+                   </property>
+                   <property name="text">
+                    <string>N/A</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="1" column="0">
+                  <widget class="QLabel" name="label_26">
+                   <property name="styleSheet">
+                    <string notr="true">font: 75 15pt &quot;MS Shell Dlg 2&quot;;</string>
+                   </property>
+                   <property name="text">
+                    <string>Charge</string>
+                   </property>
+                  </widget>
+                 </item>
+                </layout>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+            <widget class="QWidget" name="system_information">
+             <layout class="QVBoxLayout" name="verticalLayout_6">
+              <property name="spacing">
+               <number>0</number>
+              </property>
+              <property name="leftMargin">
+               <number>0</number>
+              </property>
+              <property name="topMargin">
+               <number>0</number>
+              </property>
+              <property name="rightMargin">
+               <number>0</number>
+              </property>
+              <property name="bottomMargin">
+               <number>0</number>
+              </property>
+              <item>
+               <widget class="QFrame" name="frame">
+                <property name="frameShape">
+                 <enum>QFrame::StyledPanel</enum>
+                </property>
+                <property name="frameShadow">
+                 <enum>QFrame::Raised</enum>
+                </property>
+                <layout class="QVBoxLayout" name="verticalLayout_7">
+                 <item>
+                  <widget class="QLabel" name="label_29">
+                   <property name="styleSheet">
+                    <string notr="true">font: 75 25pt &quot;MS Shell Dlg 2&quot;;</string>
+                   </property>
+                   <property name="text">
+                    <string>System Information</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QFrame" name="frame_2">
+                   <property name="sizePolicy">
+                    <sizepolicy hsizetype="Preferred" vsizetype="Expanding">
+                     <horstretch>0</horstretch>
+                     <verstretch>0</verstretch>
+                    </sizepolicy>
+                   </property>
+                   <property name="frameShape">
+                    <enum>QFrame::StyledPanel</enum>
+                   </property>
+                   <property name="frameShadow">
+                    <enum>QFrame::Raised</enum>
+                   </property>
+                   <layout class="QGridLayout" name="gridLayout_4">
+                    <item row="1" column="0" colspan="2">
+                     <widget class="QLabel" name="label_31">
+                      <property name="styleSheet">
+                       <string notr="true">font: 75 15pt &quot;MS Shell Dlg 2&quot;;</string>
+                      </property>
+                      <property name="text">
+                       <string>                 Platform</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="2" column="0" colspan="2">
+                     <widget class="QLabel" name="label_32">
+                      <property name="styleSheet">
+                       <string notr="true">font: 75 15pt &quot;MS Shell Dlg 2&quot;;</string>
+                      </property>
+                      <property name="text">
+                       <string>                 Version</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="3" column="0" colspan="2">
+                     <widget class="QLabel" name="label_33">
+                      <property name="styleSheet">
+                       <string notr="true">font: 75 15pt &quot;MS Shell Dlg 2&quot;;</string>
+                      </property>
+                      <property name="text">
+                       <string>              System date</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="0" column="0" colspan="2">
+                     <widget class="QLabel" name="system_system">
+                      <property name="styleSheet">
+                       <string notr="true">font: 75 16pt &quot;MS Shell Dlg 2&quot;;</string>
+                      </property>
+                      <property name="text">
+                       <string>N/A</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="6" column="0">
+                     <widget class="QLabel" name="label_36">
+                      <property name="styleSheet">
+                       <string notr="true">font: 75 15pt &quot;MS Shell Dlg 2&quot;;</string>
+                      </property>
+                      <property name="text">
+                       <string>              System Time</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="5" column="0">
+                     <widget class="QLabel" name="label_35">
+                      <property name="styleSheet">
+                       <string notr="true">font: 75 15pt &quot;MS Shell Dlg 2&quot;;</string>
+                      </property>
+                      <property name="text">
+                       <string>                Machine</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="4" column="0">
+                     <widget class="QLabel" name="label_34">
+                      <property name="styleSheet">
+                       <string notr="true">font: 75 15pt &quot;MS Shell Dlg 2&quot;;</string>
+                      </property>
+                      <property name="text">
+                       <string>                Processor</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="1" column="2">
+                     <widget class="QLabel" name="system_platform">
+                      <property name="styleSheet">
+                       <string notr="true">font: 75 15pt &quot;MS Shell Dlg 2&quot;;</string>
+                      </property>
+                      <property name="text">
+                       <string>N/A</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="2" column="2">
+                     <widget class="QLabel" name="system_version">
+                      <property name="styleSheet">
+                       <string notr="true">font: 75 15pt &quot;MS Shell Dlg 2&quot;;</string>
+                      </property>
+                      <property name="text">
+                       <string>N/A</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="3" column="2">
+                     <widget class="QLabel" name="system_date">
+                      <property name="styleSheet">
+                       <string notr="true">font: 75 15pt &quot;MS Shell Dlg 2&quot;;</string>
+                      </property>
+                      <property name="text">
+                       <string>N/A</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="4" column="2">
+                     <widget class="QLabel" name="system_p">
+                      <property name="styleSheet">
+                       <string notr="true">font: 75 15pt &quot;MS Shell Dlg 2&quot;;</string>
+                      </property>
+                      <property name="text">
+                       <string>N/A</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="5" column="2">
+                     <widget class="QLabel" name="system_machine">
+                      <property name="styleSheet">
+                       <string notr="true">font: 75 15pt &quot;MS Shell Dlg 2&quot;;</string>
+                      </property>
+                      <property name="text">
+                       <string>N/A</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="6" column="2">
+                     <widget class="QLabel" name="system_time">
+                      <property name="styleSheet">
+                       <string notr="true">font: 75 15pt &quot;MS Shell Dlg 2&quot;;</string>
+                      </property>
+                      <property name="text">
+                       <string>N/A</string>
+                      </property>
+                     </widget>
+                    </item>
+                   </layout>
+                  </widget>
+                 </item>
+                </layout>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+            <widget class="QWidget" name="activites">
+             <layout class="QVBoxLayout" name="verticalLayout_8">
+              <item>
+               <widget class="QFrame" name="frame_5">
+                <property name="frameShape">
+                 <enum>QFrame::StyledPanel</enum>
+                </property>
+                <property name="frameShadow">
+                 <enum>QFrame::Raised</enum>
+                </property>
+                <layout class="QHBoxLayout" name="horizontalLayout_10">
+                 <item>
+                  <widget class="QLabel" name="label_43">
+                   <property name="styleSheet">
+                    <string notr="true">font: 75 25pt &quot;MS Shell Dlg 2&quot;;</string>
+                   </property>
+                   <property name="text">
+                    <string>Activity</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QFrame" name="frame_8">
+                   <property name="frameShape">
+                    <enum>QFrame::StyledPanel</enum>
+                   </property>
+                   <property name="frameShadow">
+                    <enum>QFrame::Raised</enum>
+                   </property>
+                   <layout class="QHBoxLayout" name="horizontalLayout_9">
+                    <item alignment="Qt::AlignRight">
+                     <widget class="QLineEdit" name="activity_search">
+                      <property name="styleSheet">
+                       <string notr="true">font: 22pt &quot;MS Shell Dlg 2&quot;;</string>
+                      </property>
+                      <property name="text">
+                       <string/>
+                      </property>
+                      <property name="placeholderText">
+                       <string>Search</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item>
+                     <widget class="QPushButton" name="pushButton_10">
+                      <property name="styleSheet">
+                       <string notr="true">font: 75 25pt &quot;MS Shell Dlg 2&quot;;</string>
+                      </property>
+                      <property name="text">
+                       <string>⌕</string>
+                      </property>
+                     </widget>
+                    </item>
+                   </layout>
+                  </widget>
+                 </item>
+                </layout>
+               </widget>
+              </item>
+              <item>
+               <widget class="QFrame" name="frame_7">
+                <property name="frameShape">
+                 <enum>QFrame::StyledPanel</enum>
+                </property>
+                <property name="frameShadow">
+                 <enum>QFrame::Raised</enum>
+                </property>
+                <layout class="QVBoxLayout" name="verticalLayout_9">
+                 <item>
+                  <widget class="QTableWidget" name="tableWidget">
+                   <property name="styleSheet">
+                    <string notr="true"/>
+                   </property>
+                   <column>
+                    <property name="text">
+                     <string>PROCESS ID</string>
+                    </property>
+                   </column>
+                   <column>
+                    <property name="text">
+                     <string>PROCESS NAME</string>
+                    </property>
+                   </column>
+                   <column>
+                    <property name="text">
+                     <string>PROCESS STATUS</string>
+                    </property>
+                   </column>
+                   <column>
+                    <property name="text">
+                     <string>STARTED</string>
+                    </property>
+                   </column>
+                   <column>
+                    <property name="text">
+                     <string>SUSPENDED</string>
+                    </property>
+                   </column>
+                   <column>
+                    <property name="text">
+                     <string>RESUME</string>
+                    </property>
+                   </column>
+                   <column>
+                    <property name="text">
+                     <string>TERMINATE</string>
+                    </property>
+                   </column>
+                   <column>
+                    <property name="text">
+                     <string>KILL</string>
+                    </property>
+                   </column>
+                  </widget>
+                 </item>
+                </layout>
+               </widget>
+              </item>
+              <item>
+               <widget class="QFrame" name="frame_6">
+                <property name="frameShape">
+                 <enum>QFrame::StyledPanel</enum>
+                </property>
+                <property name="frameShadow">
+                 <enum>QFrame::Raised</enum>
+                </property>
+                <layout class="QHBoxLayout" name="horizontalLayout_11">
+                 <item>
+                  <widget class="QPushButton" name="pushButton_3">
+                   <property name="styleSheet">
+                    <string notr="true">font: 75 13pt &quot;MS Shell Dlg 2&quot;;</string>
+                   </property>
+                   <property name="text">
+                    <string>Suspend</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QPushButton" name="pushButton_4">
+                   <property name="styleSheet">
+                    <string notr="true">font: 75 13pt &quot;MS Shell Dlg 2&quot;;</string>
+                   </property>
+                   <property name="text">
+                    <string>Resume</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QPushButton" name="pushButton_5">
+                   <property name="styleSheet">
+                    <string notr="true">font: 75 13pt &quot;MS Shell Dlg 2&quot;;</string>
+                   </property>
+                   <property name="text">
+                    <string>Terminate</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QPushButton" name="pushButton_6">
+                   <property name="styleSheet">
+                    <string notr="true">font: 75 13pt &quot;MS Shell Dlg 2&quot;;</string>
+                   </property>
+                   <property name="text">
+                    <string>KILL</string>
+                   </property>
+                  </widget>
+                 </item>
+                </layout>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+            <widget class="QWidget" name="storage">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Preferred" vsizetype="Expanding">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <layout class="QVBoxLayout" name="verticalLayout_10">
+              <item>
+               <widget class="QLabel" name="label_44">
+                <property name="styleSheet">
+                 <string notr="true">font: 75 25pt &quot;MS Shell Dlg 2&quot;;</string>
+                </property>
+                <property name="text">
+                 <string>Disk Partition</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QTableWidget" name="storageTable">
+                <column>
+                 <property name="text">
+                  <string>DEVICE</string>
+                 </property>
+                </column>
+                <column>
+                 <property name="text">
+                  <string>Mount Point</string>
+                 </property>
+                </column>
+                <column>
+                 <property name="text">
+                  <string>FStype</string>
+                 </property>
+                </column>
+                <column>
+                 <property name="text">
+                  <string>OPTS</string>
+                 </property>
+                </column>
+                <column>
+                 <property name="text">
+                  <string>MAX FILE</string>
+                 </property>
+                </column>
+                <column>
+                 <property name="text">
+                  <string>MAX PATH</string>
+                 </property>
+                </column>
+                <column>
+                 <property name="text">
+                  <string>TOTAL STORAGE</string>
+                 </property>
+                </column>
+                <column>
+                 <property name="text">
+                  <string>USED STORAGE</string>
+                 </property>
+                </column>
+                <column>
+                 <property name="text">
+                  <string>FREE STORAGE</string>
+                 </property>
+                </column>
+                <column>
+                 <property name="text">
+                  <string/>
+                 </property>
+                </column>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+            <widget class="QWidget" name="sensors">
+             <layout class="QVBoxLayout" name="verticalLayout_11"/>
+            </widget>
+            <widget class="QWidget" name="cpu_and_memory">
+             <layout class="QVBoxLayout" name="verticalLayout_4">
+              <item>
+               <widget class="QFrame" name="cpu_info_frame">
+                <property name="frameShape">
+                 <enum>QFrame::StyledPanel</enum>
+                </property>
+                <property name="frameShadow">
+                 <enum>QFrame::Raised</enum>
+                </property>
+                <layout class="QGridLayout" name="gridLayout">
+                 <item row="1" column="0">
+                  <widget class="QLabel" name="label_5">
+                   <property name="styleSheet">
+                    <string notr="true">font: 75 15pt &quot;MS Shell Dlg 2&quot;;</string>
+                   </property>
+                   <property name="text">
+                    <string>CPU Per</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="0" column="1">
+                  <widget class="QLabel" name="cpu_count">
+                   <property name="styleSheet">
+                    <string notr="true">font: 75 15pt &quot;MS Shell Dlg 2&quot;;</string>
+                   </property>
+                   <property name="text">
+                    <string>N/A</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="2" column="0">
+                  <widget class="QLabel" name="label_6">
+                   <property name="styleSheet">
+                    <string notr="true">font: 75 15pt &quot;MS Shell Dlg 2&quot;;</string>
+                   </property>
+                   <property name="text">
+                    <string>CPU Main Core</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="0" column="0">
+                  <widget class="QLabel" name="label_4">
+                   <property name="styleSheet">
+                    <string notr="true">font: 75 15pt &quot;MS Shell Dlg 2&quot;;</string>
+                   </property>
+                   <property name="text">
+                    <string>CPU Count</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="1" column="1">
+                  <widget class="QLabel" name="cpu_per">
+                   <property name="styleSheet">
+                    <string notr="true">font: 75 15pt &quot;MS Shell Dlg 2&quot;;</string>
+                   </property>
+                   <property name="text">
+                    <string>N/A</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="2" column="1">
+                  <widget class="QLabel" name="cpu_main_core">
+                   <property name="styleSheet">
+                    <string notr="true">font: 75 15pt &quot;MS Shell Dlg 2&quot;;</string>
+                   </property>
+                   <property name="text">
+                    <string>N/A</string>
+                   </property>
+                  </widget>
+                 </item>
+                </layout>
+               </widget>
+              </item>
+              <item>
+               <widget class="QFrame" name="ram_info_frame">
+                <property name="frameShape">
+                 <enum>QFrame::StyledPanel</enum>
+                </property>
+                <property name="frameShadow">
+                 <enum>QFrame::Raised</enum>
+                </property>
+                <layout class="QGridLayout" name="gridLayout_2">
+                 <item row="0" column="2">
+                  <widget class="QLabel" name="total_ram">
+                   <property name="styleSheet">
+                    <string notr="true">font: 75 12pt &quot;MS Shell Dlg 2&quot;;</string>
+                   </property>
+                   <property name="text">
+                    <string>N/A</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="3" column="0">
+                  <widget class="QLabel" name="label_18">
+                   <property name="styleSheet">
+                    <string notr="true">font: 75 12pt &quot;MS Shell Dlg 2&quot;;</string>
+                   </property>
+                   <property name="text">
+                    <string>Free RAM</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="0" column="0" colspan="2">
+                  <widget class="QLabel" name="label_10">
+                   <property name="styleSheet">
+                    <string notr="true">font: 75 12pt &quot;MS Shell Dlg 2&quot;;</string>
+                   </property>
+                   <property name="text">
+                    <string>Total RAM</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="1" column="0" colspan="2">
+                  <widget class="QLabel" name="label_11">
+                   <property name="styleSheet">
+                    <string notr="true">font: 75 12pt &quot;MS Shell Dlg 2&quot;;</string>
+                   </property>
+                   <property name="text">
+                    <string>Available RAM</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="2" column="0" colspan="2">
+                  <widget class="QLabel" name="label_12">
+                   <property name="styleSheet">
+                    <string notr="true">font: 75 12pt &quot;MS Shell Dlg 2&quot;;</string>
+                   </property>
+                   <property name="text">
+                    <string>Used RAM</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="3" column="2">
+                  <widget class="QLabel" name="free_ram">
+                   <property name="styleSheet">
+                    <string notr="true">font: 75 12pt &quot;MS Shell Dlg 2&quot;;</string>
+                   </property>
+                   <property name="text">
+                    <string>N/A</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="4" column="2">
+                  <widget class="QLabel" name="ram_usage">
+                   <property name="styleSheet">
+                    <string notr="true">font: 75 12pt &quot;MS Shell Dlg 2&quot;;</string>
+                   </property>
+                   <property name="text">
+                    <string>N/A</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="4" column="0">
+                  <widget class="QLabel" name="label_13">
+                   <property name="styleSheet">
+                    <string notr="true">font: 75 12pt &quot;MS Shell Dlg 2&quot;;</string>
+                   </property>
+                   <property name="text">
+                    <string>RAM Usage</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="2" column="2">
+                  <widget class="QLabel" name="used_ram">
+                   <property name="styleSheet">
+                    <string notr="true">font: 75 12pt &quot;MS Shell Dlg 2&quot;;</string>
+                   </property>
+                   <property name="text">
+                    <string>N/A</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="1" column="2">
+                  <widget class="QLabel" name="available_ram">
+                   <property name="styleSheet">
+                    <string notr="true">font: 75 12pt &quot;MS Shell Dlg 2&quot;;</string>
+                   </property>
+                   <property name="text">
+                    <string>N/A</string>
+                   </property>
+                  </widget>
+                 </item>
+                </layout>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item alignment="Qt::AlignBottom">
+     <widget class="QFrame" name="footer_frame">
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <layout class="QHBoxLayout" name="horizontalLayout_5">
+       <item>
+        <widget class="QFrame" name="footer_left_frame">
+         <property name="frameShape">
+          <enum>QFrame::StyledPanel</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Raised</enum>
+         </property>
+         <layout class="QHBoxLayout" name="horizontalLayout_6">
+          <item alignment="Qt::AlignLeft">
+           <widget class="QLabel" name="label_3">
+            <property name="font">
+             <font>
+              <family>MS Shell Dlg 2</family>
+              <pointsize>10</pointsize>
+              <weight>9</weight>
+              <italic>false</italic>
+              <bold>false</bold>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">font: 75 10pt &quot;MS Shell Dlg 2&quot;;</string>
+            </property>
+            <property name="text">
+             <string>Version 1.0|Yathin B N and Tejas S</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="QFrame" name="footer_right_frame">
+         <property name="frameShape">
+          <enum>QFrame::StyledPanel</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Raised</enum>
+         </property>
+         <layout class="QHBoxLayout" name="horizontalLayout_7">
+          <item alignment="Qt::AlignRight">
+           <widget class="QPushButton" name="pushButton_2">
+            <property name="font">
+             <font>
+              <pointsize>10</pointsize>
+             </font>
+            </property>
+            <property name="text">
+             <string>?</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="QFrame" name="size_grip">
+         <property name="minimumSize">
+          <size>
+           <width>15</width>
+           <height>15</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>15</width>
+           <height>15</height>
+          </size>
+         </property>
+         <property name="frameShape">
+          <enum>QFrame::StyledPanel</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Raised</enum>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources>
+  <include location="icons/icons/icons.qrc"/>
+ </resources>
+ <connections/>
+</ui>
