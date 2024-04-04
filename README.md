@@ -1,1 +1,6 @@
 ![cpu and memory](https://github.com/Yathin-B-N/Psutil_Desktop_cluster_PyQt5_PySide6/assets/116481046/39f758d8-e387-4a99-a41d-2e743b2822a8)
+![battery](https://github.com/Yathin-B-N/Psutil_Desktop_cluster_PyQt5_PySide6/assets/116481046/f2d1f720-4766-49ab-8d22-74ed4c919c51)
+![Activites](https://github.com/Yathin-B-N/Psutil_Desktop_cluster_PyQt5_PySide6/assets/116481046/8acd2d79-77e8-4568-a044-94fa91e42d72)
+![network](https://github.com/Yathin-B-N/Psutil_Desktop_cluster_PyQt5_PySide6/assets/116481046/213aaeb5-69c1-4305-aa80-39aa81baf4e3)
+![Storage](https://github.com/Yathin-B-N/Psutil_Desktop_cluster_PyQt5_PySide6/assets/116481046/ee76f33f-b647-4a00-ab81-bfd6fa815d60)
+![System info](https://github.com/Yathin-B-N/Psutil_Desktop_cluster_PyQt5_PySide6/assets/116481046/9ca55fe9-5211-431b-8d9c-d2e675b6f9f9)
